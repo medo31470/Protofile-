@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: tahoma;
+}
+
+
+
+header {
+    background: linear-gradient(120deg, #6d6d6c, #34f5239a);
+    height: 250px;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+
+}
+
+header h1 {
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 18px;
+    max-width: 30%;
+    text-align: center;
+    line-height: 1.7;
+    letter-spacing: 1px;
+}
+
+main {
+    
+    width: 100%;
+    gap: 10px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.aboutme,
+.project,
+
+.arch {
+    padding: 15px 20px;
+    text-align: center;
+    background-color: #eff1ef;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5),
+        -2px -2px 5px rgba(0, 0, 0, 0.5);
+    margin: 30px 0;
+   
+    gap: 15px;
+    height: 200px;
+    line-height: 1.5;
+    width: 50%;
+    height: 100%;
+}
+
+.aboutme p,
+.project p ,
+.arch p{
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.project div a , .arch a{
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    background-color: lightgreen;
+
+}
+
+.project div a:hover , .arch a:hover{
+    text-decoration: underline;
+    scale: 1.05;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+ul li {
+    border: 2px solid lightgreen;
+    padding: 10px;
+}
+
+ul h2 {
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+footer {
+
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(120deg, #6d6d6c, #34f5239a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+footer a {
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color: lightgreen;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    scale: 1.05;
+}
+
+@media (max-width: 600px) {
+
+    header h1 {
+        text-align: center;
+        font-size: 25px;
+
+    }
+
+    header p {
+        max-width: 80%;
+    }
+
+    .aboutme,
+    .project ,
+    .arch {
+        width: 80%;
+    }
+
+    .aboutme p,
+    .project p ,
+    .arch {
+        width: 90%;
+    }
+}
+
+@media (min-width:601px) and (max-width: 1024px) {
+    body {
+        
+        min-height: 100vh;
+    }
+    footer {
+        margin-top: 202px;
+    }
+}
